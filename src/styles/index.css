@@ -1,11 +1,39 @@
-/* 
+#BodySemaforo {
+    display: flex;
+    background-color: black;
+    width: 100px;
+    height: 30%;
+    color: black;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 0;
+  background-color: gray;
+  transition: box-shadow 0.3s;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: rgb(246, 255, 0);
+}
+
+.green {
+  background-color: green;
+}
+
+.selected {
+  box-shadow: 0  0  25px  10px rgb(255, 255, 255);
+}
+
